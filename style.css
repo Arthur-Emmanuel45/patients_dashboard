@@ -1,0 +1,551 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope';
+    background-color: #F6F7F8;
+}
+* {
+    box-sizing: border-box;
+}
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 70px;
+    margin: 18px;
+    padding: 12px 30px 12px 32px;
+}
+#logo {
+    width: 211px;
+    height: 48px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-shrink: inherit;
+}
+nav ul li {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    list-style: none;
+    color: #072635;
+    text-align: left;
+    opacity: 1;
+    cursor: pointer;
+    padding: 11px 16px;
+    border-radius: 20px;
+}
+.nav-background-color {
+    background-color: #01F0D0;
+}
+nav ul li img {
+    width: 16px;
+    height: 17px;
+}
+/* nav user profile desgin */
+.user-identity {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+.user-identity-image {
+    height: 44px;
+    width: 44px;
+}
+.user-identity-image:hover {
+    cursor: pointer;
+}
+h1 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+h1:hover {
+    cursor: pointer;
+}
+.profile-name-detiles {
+    border-right: 1px solid #F6F7F8;
+    padding-right: 10px;
+} 
+.user-position {
+    margin: 0;
+    font-size: 14px;
+}
+#setting-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px; 
+}
+#setting-menu img:nth-child(1) {
+    width: 19px;
+    height: 20px;
+    cursor: pointer;
+    padding-left: 2px;
+}
+#setting-menu img:nth-child(2) {
+    width: 4px;
+    height: 18px;
+    cursor: pointer;
+}
+/** main dashboard */
+main {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin: 0 10px;
+}
+#mobile-display {
+    display: none;
+}
+/* aside bar */
+.side-bars {
+    background-color: #fff;
+    width: 25%;
+    border-radius: 16px;
+}
+#side-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px 20px 0 20px;
+}
+h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 800;
+}
+.side-header img {
+    width: 18px;
+    height: 18px;
+}
+/* left pannel user profiles design */
+#user-left-panel-container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 80vh;
+}
+#user-left-panel-container::-webkit-scrollbar {
+    width: 0.5vw;
+}
+#user-left-panel-container::-webkit-scrollbar-thumb {
+    background-color: #072635;
+    border-radius: 12px;
+}
+#user-left-panel-container::-webkit-scrollbar-track {
+    background-color: #E3E4E6;
+    border-radius: 12px;
+}
+.user-identity-container {
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 5px 5px 5px 15px;
+    margin-right: 5px;
+}
+.user-identity-container:hover {
+    cursor: pointer;
+}
+.user-identity-active-on {
+    background-color: #D8FCF7;
+}
+.user-detiles-container {
+    display: flex;
+    gap: 5px;
+}
+.user-name-detiles {
+    font-size: 14px;
+}
+/* middle bar dashboard */
+#middle-bar {
+    width: 55%;
+    background-color: #fff;
+    padding: 20px;
+    padding-bottom: 30px;
+    border-radius: 16px;
+    height: fit-content;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 800;
+}
+h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+#graph-container {
+    width: 100%;
+    margin-top: 0;
+    background-color: #F4F0FE;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+#graph-items-container {
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+}
+#graph-inner-container {
+    width: 65%;
+}
+#last-month-container {
+    text-align: left;
+    font-size: 12px;
+}
+#graph {
+    height: 100px;
+    width: 100%;
+}
+#chart-legends-container {
+    padding: 12px 15px;
+    font-size: 14px;
+    width: 35%;
+}
+#chart-legends-container p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+}
+hr {
+    margin: 10px auto;
+}
+.legend-header {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.legend-header span:nth-child(2) {
+    font-weight: bold;
+}
+.dot {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+.systolic-circle {
+    background-color: #E66FD2;
+}
+.diasystolic-circle {
+    background-color: #8C6FE6;
+}
+#patients-checkup {
+    display: flex;
+    justify-content: space-between;
+}
+.patients-checkup-container {
+    padding: 10px 0 10px 10px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.resp_rate-container {
+    background-color: #E0F3FA;
+    width: 30%;
+}
+.temp-container {
+    background-color: #FFE6E9;
+    width: 30%;
+}
+.heart_rate-container {
+    background-color: #FFE6F1;
+    width: 30%;
+}
+.bp-images {
+    width: 70px;
+    height: 70px;
+}
+.checkup-name {
+    margin: 0;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.rate-temp {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 800;
+}
+.status {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+/*right pannel user profile design */
+.right-panel {
+    padding: 20px;
+}
+#active-patient-img {
+    width: 50%;
+    margin: auto;
+}
+#active-patient-img img {
+    width: 100%;
+}
+h5 {
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    margin: 10px auto;
+}
+.profile-detile-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+}
+.profile-detile-container img {
+    width: 42px;
+    height: 42px;
+    margin: 13px;
+}
+h6 {
+    font-size: 14px;
+    margin: 0;
+    font-weight: normal;
+}
+.profile-detile-container div:nth-child(2) p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+button {
+    margin-top: 30px;
+    padding: 5px;
+    width: 220px;
+    max-width: 100%;
+    height: 41px;
+    background-color: #01F0D0;
+    border-radius: 20px;
+    border: none;
+    margin-left: 8%;
+}
+@media (max-width: 1199px) {
+    header {
+        flex-wrap: wrap;
+    }
+    nav {
+        order: 3;
+        margin: auto;
+    }
+    nav ul {
+        gap: 5px;
+    }
+    nav ul li {
+        padding: 8px 8px;
+    }
+    #patients-checkup {
+        flex-wrap: wrap;
+    }
+    .patients-checkup-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .patients-checkup-container div {
+        margin-right: 20px;
+    }
+    .checkup-name, .status {
+        font-size: 18px;
+    }
+    .rate-temp {
+        font-size: 22px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    main {
+        gap: 10px;
+    }
+    #user-left-panel-container {
+        height: 75vh;
+    }
+    #graph-container {
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    #graph-inner-container {
+        width: 100%;
+    }
+    #chart-legends-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #chart-legends-container div:nth-child(3), #chart-legends-container div:nth-child(7) {
+        font-size: 10px;
+    }   
+    #chart-legends-container p:nth-child(2), #chart-legends-container p:nth-child(6) {
+        font-size: 16px;
+    }
+    #legends-divider {
+        height: 100%;
+        margin: auto 10px;
+    }
+}
+@media (max-width: 767px) {
+    header {
+        margin: 6px;
+        padding: 3px 7px;
+        border-radius: 35px;
+    }
+    #logo {
+        width: 110px;
+        height: 30px;
+    }
+    nav ul {
+        gap: 0;
+    }
+    nav ul li {
+        padding: 5px 6px;
+    }
+    nav ul li img {
+        width: 10px;
+        height: 10px;
+    }
+    nav ul li span {
+        font-size: 10px;
+    }
+    .user-identity-image {
+        width: 22px;
+        height: 22px;
+    }
+    h1, .user-position {
+        font-size: 12px;
+    }
+    #setting-menu img:nth-child(1) {
+        width: 15px;
+        height: 15px;
+    }
+    #setting-menu img:nth-child(2) {
+        width: 2px;
+        height: 10px;
+    }
+    main {
+        gap: 10px;
+    }
+    #mobile-display {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .display-patients {
+        display: flex;
+        gap: 5px;
+    }
+    
+    /* left panel */
+    .left-panel {
+        position: absolute;
+        left: 0;
+        top: 105px;
+        width: 0%;
+        display: none;
+    }
+    .left-panel-on {
+        display: block;
+        width: 50%;
+    }
+    .side-bars {
+        padding: 5px;
+    }
+    #side-header {
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    #side-header img {
+        width: 10px;
+        height: 10px;
+    }
+    /* middle panel */
+    #middle-bar {
+        height: auto;
+        width: 100%;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    #graph-container {
+        flex-direction: column;
+    }
+    #graph-inner-container {
+        width: 100%;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    #chart-legends-container {
+        width: 100%;
+    } 
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+    .legend-header span:nth-child(2) {
+        font-size: 12px;
+    }
+    #chart-legends-container p {
+        font-size: 14px;
+    }
+    #systolic-status, #diastolic-status {
+        font-size: 12px;
+    }
+    /* righ panel */
+    .right-panel {
+        position: absolute;
+        right: 0px;
+        top: 105px;
+        width: 0%;
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .right-panel-on {
+        opacity: 1;
+        visibility: visible;
+        width: 50%;
+        display: block;
+    }
+    #profile-name {
+        font-size: 14px;
+    }
+    .profile-detile-container {
+        flex-direction: column;
+    }
+    .profile-detile-container img {
+        width: 21px;
+        height: 21px;
+        margin: 10px auto;
+    }
+    .profile-detile-container div {
+        margin: 0 auto;
+    }
+    h6 {
+        font-size: 11px;
+    }
+    .profile-detile-container div:nth-child(2) p {
+        font-size: 12px;
+    }
+    button {
+        font-size: 10px;
+        margin: 20px 1%;
+    }
+    .bp-images {
+        width: 60px;
+        height: 60px;
+    }
+    .patients-checkup-container div {
+        font-size: 12px;
+    }
+}
