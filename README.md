@@ -1,1 +1,2 @@
-The patients dashboard of a hospital. incoperating api calls to fill in the data of the patinet jessica
+API-driven patient dashboard that consumes dynamic data and presents
+it in a clean, user-friendly interface.
